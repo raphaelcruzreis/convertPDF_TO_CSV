@@ -19,7 +19,7 @@ print("\nTABLE FROM PDF FILE\n\n" + str(df))
 PDF_T_CSV = '/storage/user/localfile/FILE_PDF_TO_CSV.csv'
 PDF_T_EXCEL = '/storage/user/localfile/FILE_PDF_TO_EXCEL.xls'
 
-tabula.convert_into(\inputPDF, PDF_T_CSV, output_format='csv', pages='all')
+tabula.convert_into(inputPDF, PDF_T_CSV, output_format='csv', pages='all')
 print("\nSUCESSFULLY CONVERTED INTO CSV FILE")
 
 df = to.excel(PDF_toEXCEL, index=false)
