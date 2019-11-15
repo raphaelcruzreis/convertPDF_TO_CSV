@@ -12,7 +12,7 @@ import tabula
 
 inputPDF = '/storage/user/localfile/file.pdf'
 
-df = tabula.read_pdf(\inputPDF)
+df = tabula.read_pdf(inputPDF)
 
 print("\nTABLE FROM PDF FILE\n\n" + str(df))
 
