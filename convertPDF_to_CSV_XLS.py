@@ -10,7 +10,7 @@
 
 import tabula
 
-inputPDF = '/storage/user/localfile/file.pdf'
+inputPDF = '/storage/user/localfile/file_name.pdf'
 
 df = tabula.read_pdf(inputPDF)
 
@@ -22,6 +22,6 @@ PDF_T_EXCEL = '/storage/user/localfile/FILE_PDF_TO_EXCEL.xls'
 tabula.convert_into(inputPDF, PDF_T_CSV, output_format='csv', pages='all')
 print("\nSUCESSFULLY CONVERTED INTO CSV FILE")
 
-df = to.excel(PDF_toEXCEL, index=false)
+df.to_excel(PDF_T_EXCEL, index=False)
 print("\nSUCESSFULLY CONVERTED INTO EXCEL FILE")
 
